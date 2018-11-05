@@ -42,9 +42,9 @@ Use test-driven development to design a function called `convert`. Below is a li
 
 ### Steps:
 
-- Create a function called `convert` that takes a dictionary called `rates`, a number called `value`, a string called `from`, and a string called `to`. Make sure than when you call `convert` with `from` and `to` being equal, the return value is the same as `value`.
+- Create a function called `convert` that takes a list called `rates`, a number called `value`, a string called `current`, and a string called `to`. Make sure than when you call `convert` with `current` and `to` being equal, the return value is the same as `value`.
 
-- The `rates` dictionary should contain a list of tuples, with each tuple containing a currency code you can convert from, a currency code you can convert to, and a rate.
+- The `rates` list should contain a list of tuples, with each tuple containing a currency code you can convert from, a currency code you can convert to, and a rate.
 
   ```py
   [("USD", "EUR", 0.74)]
@@ -52,7 +52,7 @@ Use test-driven development to design a function called `convert`. Below is a li
 
   This means that each dollar is worth 0.74 euros.
 
-  `value` is the amount of currency, `from` is the current currency code, and `to` is the currency code you wish to convert to.
+  `value` is the amount of currency, `current` is the current currency code, and `to` is the currency code you wish to convert to.
 
   Given the above rates, make sure that converting 1 dollar into euros returns the following value: `0.74`.
 
